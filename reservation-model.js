@@ -18,9 +18,9 @@ rules.push(new Validator.DateRule('arrival_date', 'Arrival Date', true));
 rules.push(new Validator.DateRule('departure_date', 'Departure Date', true));
 rules.push(new Validator.FunctionRule(function(params) {
 	if (params.arrival_date && params.arrival_date.length > 0) {
-		if (isPastDate(params.arrival_date))
+		if (Validator.Date.isPastDate(params.arrival_date))
 			return 'Arrival Date must NOT be in the past.';
-		if (params.departure_date && params.departure_date.length > 0 && isSmallerDate(params.departure_date, params.arrival_date))
+		if (params.departure_date && params.departure_date.length > 0 && Validator.Date.isSmallerDate(params.departure_date, params.arrival_date))
         	return 'Departure Date must NOT be smaller than Arrival Date.';
 	}
 	return undefined;
@@ -55,9 +55,9 @@ rules.push(new Validator.DateRule('arrival_date', 'Arrival Date', true));
 rules.push(new Validator.DateRule('departure_date', 'Departure Date', true));
 rules.push(new Validator.FunctionRule(function(params) {
 	if (params.arrival_date && params.arrival_date.length > 0) {
-		if (isPastDate(params.arrival_date))
+		if (Validator.Date.isPastDate(params.arrival_date))
 			return 'Arrival Date must NOT be in the past.';
-		if (params.departure_date && params.departure_date.length > 0 && isSmallerDate(params.departure_date, params.arrival_date))
+		if (params.departure_date && params.departure_date.length > 0 && Validator.Date.isSmallerDate(params.departure_date, params.arrival_date))
         	return 'Departure Date must NOT be smaller than Arrival Date.';
 	}
 	return undefined;
