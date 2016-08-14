@@ -1,0 +1,23 @@
+{
+  "name": "ss-models",
+  "version": "1.0.0",
+  "description": "Validation model sample",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nvt2106/ss-models.git"
+  },
+  "keywords": [
+    "validation",
+    "model"
+  ],
+  "author": "Tuan Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nvt2106/ss-models/issues"
+  },
+  "homepage": "https://github.com/Nvt2106/ss-models#readme"
+}

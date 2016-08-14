@@ -1,0 +1,21 @@
+{
+  "name": "ss-models",
+  "authors": [
+    "Tuan Nguyen <nvt2106@yahoo.com>"
+  ],
+  "description": "Validation model sample",
+  "main": "",
+  "keywords": [
+    "validation",
+    "model"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
