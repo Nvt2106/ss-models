@@ -2,7 +2,7 @@
 
 var Validator = Validator || {};
 if (typeof require !== 'undefined') {
-	Validator = require('../node_modules/tc-validator');
+	Validator = require('../tc-validator');
 }
 
 var PolicyModel = PolicyModel || {};
