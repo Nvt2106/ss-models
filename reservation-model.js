@@ -31,7 +31,9 @@ rules.push(new Validator.FunctionRule(function(params) {
         && params.number_of_guests != undefined && params.number_of_guests > 0
         && params.guests.length > params.number_of_guests) {
 
-        return { code: Validator.ErrorCodes.INVALID_NUMBER_RANGE, msg: 'Number of guests must not be smaller than actual guests in list.'};
+        return { code: Validator.ErrorCodes.MIN_VALUE_VIOLATED,
+            msg: 'Number of guests must not be smaller than ' + params.guests.length + ' (actual #guests in list).',
+            field_name: 'number_of_guests' };
     }
     return {};
 }));
@@ -60,7 +62,9 @@ rules.push(new Validator.FunctionRule(function(params) {
         && params.number_of_guests != undefined && params.number_of_guests > 0
         && params.guests.length > params.number_of_guests) {
 
-        return { code: Validator.ErrorCodes.INVALID_NUMBER_RANGE, msg: 'Number of guests must not be smaller than actual guests in list.'};
+        return { code: Validator.ErrorCodes.MIN_VALUE_VIOLATED,
+            msg: 'Number of guests must not be smaller than ' + params.guests.length + ' (actual #guests in list).',
+            field_name: 'number_of_guests' };
     }
     return {};
 }));
