@@ -61,7 +61,7 @@ rules.push(new Validator.StringRule('password', 'Password', true));
 rules.push(new Validator.StringRule('confirm_password', 'Confirm Password', true));
 rules.push(new Validator.FunctionRule(function(params) {
 	if (params.confirm_password != params.password)
-		return { code: Validator.ErrorCodes.UNKNOWN, msg: 'Confirm password must be the same admin password.' };
+		return { code: Validator.ErrorCodes.GENERIC, msg: 'Confirm password must be the same admin password.' };
 	return {};
 }));
 OrganizationModel.validationRules.confirmRegistrationingObject = rules;

@@ -25,7 +25,7 @@ rules.push(new Validator.FunctionRule(function(params) {
 			return { code: Validator.ErrorCodes.MANDATORY_FIELD, msg: 'Confirm Password is required.', field_name: 'confirmPassword' };
 		}
 		if (params.password != params.confirmPassword) {
-			return { code: Validator.ErrorCodes.UNKNOWN, msg: 'Confirm password must be the same admin password.' };
+			return { code: Validator.ErrorCodes.GENERIC, msg: 'Confirm password must be the same admin password.' };
 		}
 	}
 	return {};
