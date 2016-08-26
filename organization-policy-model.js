@@ -1,7 +1,7 @@
 
 var Validator = Validator || {};
 if (typeof require !== 'undefined') {
-	Validator = require('../tc-validator');
+	Validator = require('tc-validator');
 }
 
 var AssignedOrganizationPolicyModel = AssignedOrganizationPolicyModel || {};
