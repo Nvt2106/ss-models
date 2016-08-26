@@ -15,7 +15,7 @@ rules.push(new Validator.NumberRule('organization_id', 'Organization', true));
 rules.push(new Validator.StringRule('property_name', 'Property Name', true, 1, 256));
 rules.push(new Validator.NumberRule('property_type_id', 'Property Type', true));
 rules.push(new Validator.NumberRule('room_type_id', 'Room Type', true));
-rules.push(new Validator.NumberRule('accommodates', 'Accommodates', true, 1, 1000));
+rules.push(new Validator.NumberRule('accommodates', 'Accommodates', false, 1, 1000));
 rules.push(new Validator.NumberRule('bedrooms', 'Bedrooms', false, 1, 1000));
 rules.push(new Validator.NumberRule('bathrooms', 'Bathrooms', false, 1, 1000));
 rules.push(new Validator.NumberRule('beds', 'Beds', false, 1, 1000));
