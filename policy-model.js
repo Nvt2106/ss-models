@@ -23,8 +23,10 @@ rules.push(new Validator.NumberRule('range_guests_from', 'Number Of Guests From'
 rules.push(new Validator.NumberRule('no_of_bedrooms', 'Number Of Bedrooms', false, 1, 50));
 rules.push(new Validator.NumberRule('range_guests_to', 'Number Of Guests To', false, 1, 1000));
 rules.push(new Validator.NumberRangeRule('range_guests_from', 'range_guests_to', 'Number Of Guests Range'));
-rules.push(new Validator.NumberRule('cost_to_ss', 'Cost To Safely Stay', false, 0, 1000000));
-rules.push(new Validator.NumberRule('deductible', 'Deductible', false, 0, 1000000));
+rules.push(new Validator.NumberRule('cost_to_ss', 'Cost To Safely Stay', true, 0, 1000000));
+rules.push(new Validator.NumberRule('deductible', 'Deductible', true, 0, 1000000));
+// rules.push(new Validator.StringRule('underwriter', 'Underwriter', true));
+rules.push(new Validator.NumberRule('underwriter_id', 'Underwriter', true));
 rules.push(new Validator.NumberRule('damage_coverage', 'Damage Coverage', false, 0, 1000000));
 rules.push(new Validator.NumberRule('liability_coverage', 'Liability Coverage', false, 0, 1000000));
 rules.push(new Validator.NumberRule('dwelling_coverage', 'Dwelling Coverage', false, 0, 1000000));
