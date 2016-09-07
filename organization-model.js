@@ -10,14 +10,14 @@ var OrganizationModel = OrganizationModel || {};
 OrganizationModel.validationRules = OrganizationModel.validationRules || {};
 
 var rules = [];
-rules.push(new Validator.StringRule('organization_name', 'Organization Name', true));
-rules.push(new Validator.StringRule('contact_first_name', 'Contact First Name', true));
-rules.push(new Validator.StringRule('contact_last_name', 'Contact Last Name', true));
+rules.push(new Validator.StringRule('organization_name', 'Organization\'s Name', true));
+rules.push(new Validator.StringRule('website', 'Website', true));
+rules.push(new Validator.StringRule('contact_first_name', 'Contact\'s First Name', true));
+rules.push(new Validator.StringRule('contact_last_name', 'Contact\'s Last Name', true));
 rules.push(new Validator.StringRule(['email', 'email_address'], 'Email Address', true));
 rules.push(new Validator.StringRule(['phone', 'phone_number'], 'Phone Number', true));
-rules.push(new Validator.StringRule('website', 'Website', true));
-rules.push(new Validator.StringRule(['address', 'address_line_1'], 'Address/Line1', true));
-rules.push(new Validator.NumberRule(['address', 'country_id'], 'Address/Country', true));
+rules.push(new Validator.StringRule(['address', 'address_line_1'], 'Address', true));
+rules.push(new Validator.NumberRule(['address', 'country_id'], 'Country', true));
 rules.push(new Validator.NumberRule('policy_billing_method_id', 'Policy Billing Method', true));
 rules.push(new Validator.NumberRule('verification_billing_method_id', 'Verification Billing Method', true));
 rules.push(new Validator.NumberRule('verification_monthly_price', 'Verification Monthly Price', false, 0, 1000000));
@@ -28,14 +28,14 @@ OrganizationModel.validationRules.creatingObject = rules;
 
 
 rules = [];
-rules.push(new Validator.StringRule('organization_name', 'Organization Name', true));
-rules.push(new Validator.StringRule('contact_first_name', 'Contact First Name', true));
-rules.push(new Validator.StringRule('contact_last_name', 'Contact Last Name', true));
+rules.push(new Validator.StringRule('organization_name', 'Organization\' Name', true));
+rules.push(new Validator.StringRule('website', 'Website', true));
+rules.push(new Validator.StringRule('contact_first_name', 'Contact\' First Name', true));
+rules.push(new Validator.StringRule('contact_last_name', 'Contact\' Last Name', true));
 rules.push(new Validator.StringRule('email_address', 'Email Address', true));
 rules.push(new Validator.StringRule('phone_number', 'Phone Number', true));
-rules.push(new Validator.StringRule('website', 'Website', true));
-rules.push(new Validator.StringRule(['address', 'address_line_1'], 'Address/Line1', true));
-rules.push(new Validator.NumberRule(['address', 'country_id'], 'Address/Country', true));
+rules.push(new Validator.StringRule(['address', 'address_line_1'], 'Address', true));
+rules.push(new Validator.NumberRule(['address', 'country_id'], 'Country', true));
 rules.push(new Validator.NumberRule('policy_billing_method_id', 'Policy Billing Method', true));
 rules.push(new Validator.NumberRule('verification_billing_method_id', 'Verification Billing Method', true));
 rules.push(new Validator.NumberRule('verification_monthly_price', 'Verification Monthly Price', false, 0, 1000000));
@@ -45,14 +45,14 @@ OrganizationModel.validationRules.updatingObject = rules;
 
 
 rules = [];
-rules.push(new Validator.StringRule('organization_name', 'Organization Name', true));
-rules.push(new Validator.StringRule('contact_first_name', 'Contact First Name', true));
-rules.push(new Validator.StringRule('contact_last_name', 'Contact Last Name', true));
+rules.push(new Validator.StringRule('organization_name', 'Organization\' Name', true));
+rules.push(new Validator.StringRule('website', 'Website', true));
+rules.push(new Validator.StringRule('contact_first_name', 'Contact\' First Name', true));
+rules.push(new Validator.StringRule('contact_last_name', 'Contact\' Last Name', true));
 rules.push(new Validator.StringRule(['email', 'email_address'], 'Email Address', true));
 rules.push(new Validator.StringRule(['phone', 'phone_number'], 'Phone Number', true));
-rules.push(new Validator.StringRule('website', 'Website', true));
-rules.push(new Validator.StringRule(['address', 'address_line_1'], 'Address/Line1', true));
-rules.push(new Validator.NumberRule(['address', 'country_id'], 'Address/Country', true));
+rules.push(new Validator.StringRule(['address', 'address_line_1'], 'Address', true));
+rules.push(new Validator.NumberRule(['address', 'country_id'], 'Country', true));
 OrganizationModel.validationRules.registeringObject = rules;
 
 

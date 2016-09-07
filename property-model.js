@@ -19,8 +19,6 @@ rules.push(new Validator.NumberRule('accommodates', 'Accommodates', false, 1, 10
 rules.push(new Validator.NumberRule('bedrooms', 'Bedrooms', false, 1, 1000));
 rules.push(new Validator.NumberRule('bathrooms', 'Bathrooms', false, 1, 1000));
 rules.push(new Validator.NumberRule('beds', 'Beds', false, 1, 1000));
-// rules.push(new Validator.StringRule(['address', 'address_line_1'], 'Address/Line1', true));
-// rules.push(new Validator.NumberRule(['address', 'country_id'], 'Address/Country', true));
 PropertyModel.validationRules.creatingObject = rules;
 
 PropertyModel.validationRules.updatingObject = PropertyModel.validationRules.creatingObject;

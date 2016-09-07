@@ -14,8 +14,8 @@ var rules = [];
 rules.push(new Validator.NumberRule('reservation_id', 'Reservation for claim', true));
 rules.push(new Validator.NumberRule('cause_id', 'Claim Cause', true));
 rules.push(new Validator.DateRule('loss_date', 'Lost Date', true, null, Validator.Date.getTodayString()));
-rules.push(new Validator.StringRule(['police_station_address', 'address_line_1'], 'Address/Line1', true));
-rules.push(new Validator.NumberRule(['police_station_address', 'country_id'], 'Address/Country', true));
+rules.push(new Validator.StringRule(['police_station_address', 'address_line_1'], 'Address', true));
+rules.push(new Validator.NumberRule(['police_station_address', 'country_id'], 'Country', true));
 InsuranceClaimModel.validationRules.creatingObject = rules;
 
 

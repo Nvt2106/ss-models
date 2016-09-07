@@ -10,8 +10,8 @@ var AddressModel = {};
 
 
 AddressModel.creatingObject = [
-	new Validator.StringRule('address_line_1', 'Address/Line1', true),
-	new Validator.NumberRule('country_id', 'Address/Country', true, 1, 1000)
+	new Validator.StringRule('address_line_1', 'Address', true),
+	new Validator.NumberRule('country_id', 'Country', true, 1, 1000)
 ];
 
 AddressModel.updatingObject = AddressModel.creatingObject;
