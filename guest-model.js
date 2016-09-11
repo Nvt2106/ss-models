@@ -11,6 +11,7 @@ var GuestModel = GuestModel || {};
 GuestModel.validationRules = GuestModel.validationRules || {};
 
 rules = [];
+rules.push(new Validator.NumberRule('organization_id', 'Organization', true));
 rules.push(new Validator.StringRule('first_name', 'First Name', true));
 rules.push(new Validator.StringRule('last_name', 'Last Name', true));
 rules.push(new Validator.DateRule('birth_date', 'Date Of Birth', true, '1900-01-01', Validator.Date.getTodayString()));
