@@ -18,7 +18,7 @@ rules.push(new Validator.NumberRule('reservation_currency_id', 'Reservation Curr
 rules.push(new Validator.DateRule('arrival_date', 'Arrival Date', true, Validator.Date.getTodayString()));
 rules.push(new Validator.DateRule('departure_date', 'Departure Date', true));
 rules.push(new Validator.DateRangeRule('arrival_date', 'departure_date', 'Departure Date cannot be before Arrival Date.'));
-rules.push(new Validator.NumberRule('package_currency_id', 'Policy/Verification Currency', true));
+// rules.push(new Validator.NumberRule('package_currency_id', 'Policy/Verification Currency', true));
 rules.push(new Validator.NumberRule('number_of_guests', 'Number Of Guests', false, 1, 1000));
 rules.push(new Validator.FunctionRule(function(params) {
     var noOfGuests = params.number_of_guests;
